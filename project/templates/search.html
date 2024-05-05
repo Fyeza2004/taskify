@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search Tasks
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .btn-primary {
+            background-color: #3fafd0 !important;
+            border: none !important;
+            margin-top: 20px;
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h2 class="text-center">Search Tasks</h2>
+        <form action="{{ url_for('search_task') }}" method="GET">
+                <input type="text" name="query" class="form-control" placeholder="Enter task name" autofocus autocomplete='off'>
+                <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+body{
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+form {
+    margin-top: 5px;
+    border-radius: .25rem;
+    background: rgba(255, 255, 255, 0.795);
+    padding: 30px;
+}
+
+.btn-primary {
+    background-color: #3fafd0 !important;
+    border: none !important;
+}
