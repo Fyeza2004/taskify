@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success message
+{% endblock %}
+
+{% block description %}This page is shown when something went successfully!{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <p class="title text-center" style="color: #3fafd0; font-size: 40px">{{ success_message }}</p>
+        {% if back %}
+            <p class="text-center" style="font-size: 25px">Go <a style="color: #3fafd0" href="{{ url_for('index') }}">back</a></p>
+        {% endif %}
+    </div>
+{% endblock %}
